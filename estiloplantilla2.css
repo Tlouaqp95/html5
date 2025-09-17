@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: navajowhite;
+    font-family: sans-serif;
+}
+
+/* Menú en línea */
+ul li {
+  display: inline;   
+  margin-right: 15px; 
+}
+
+/* Contenedor que centra el bloque arriba */
+.contenedor {
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    margin-top: 40px;        /* espacio desde arriba */
+}
+
+.box {
+    display: flex;
+}
+
+.box .inner {
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 4em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .inner:first-child {
+    background-color: indianred;
+    color: darkred;
+    transform-origin: right;
+    transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+    background-color: lightcoral;
+    color: antiquewhite;
+    transform-origin: left;
+    transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+    position: absolute;
+    animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+    animation-delay: 2.5s;
+    left: -100%;
+}
+
+@keyframes marquee {
+    from { left: 100%; }
+    to { left: -100%; }
+}
+
+/* Texto debajo */
+.texto-abajo {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.5em;
+    color: darkred;
+}
