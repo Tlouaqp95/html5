@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloplantilla.css">
+    
+</head>
+<body>
+    <!-- Botón desplegable en la esquina superior izquierda -->
+    <div class="dropdown-menu">
+        <button class="dropdown-btn" onclick="toggleDropdown()">
+            <span class="hamburger-icon">☰</span>
+            Proyectos
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <div class="dropdown-header">
+                <h3>Información Personal</h3>
+            </div>
+            <div class="dropdown-item">Edad: 20</div>
+            <div class="dropdown-separator">Juegos Favoritos</div>
+            <div class="dropdown-item">Bloodborne</div>
+            <div class="dropdown-item">Dark Souls</div>
+            <div class="dropdown-item">Dark Souls 2</div>
+            <div class="dropdown-item">Dark Souls 3</div>
+            <div class="dropdown-item">Elden Ring</div>
+            <div class="dropdown-item">Sekiro</div>
+            <div class="dropdown-item">Hollow Knight</div>
+            <div class="dropdown-item">Dungeonborne</div>
+            <div class="dropdown-item">The Last of Us</div>
+            <div class="dropdown-item">Uncharted</div>
+            <div class="dropdown-item">Infamous Second Son</div>
+        </div>
+    </div>
+
+    <header>
+        <body>
+  <div class="stage">
+    <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  </div>
+
+<div class="navegacion-plantillas">
+    <div class="botones-nav">
+        <a href="index.html" class="boton-plantilla">Css Clase</a>
+        <a href="plantilla.html" class="boton-plantilla">Plantilla 1</a>
+        <a href="plantilla2.html" class="boton-plantilla">Plantilla 2</a>
+    </div>
+</div>
+<div class="contenedor-1">
+
+    <h1>Sobre mí</h1>
+    <p>Bloodborne es un videojuego de acción y rol ambientado en la lúgubre ciudad gótica de Yharnam, donde una extraña plaga ha transformado a sus habitantes en bestias. El jugador asume el papel de un cazador que debe desentrañar los misterios de 
+        la enfermedad mientras enfrenta criaturas grotescas y horrores cósmicos. Con una atmósfera oscura e inspirada en el terror lovecraftiano, la historia explora temas de locura, fe y conocimiento prohibido. Más que un simple combate, es un viaje hacia
+         lo desconocido en busca de la verdad oculta tras la pesadilla.
+
+    </p>
+    </div>
+
+
+<footer class="pie-pagina">
+    <div class="contenido-footer">
+        <h2>Contactos</h2>
+        <div class="info-contacto">
+            <p><i class="icono-email">📧</i> Correo: 2301010378@undc.edu.pe</p>
+            <p><i class="icono-telefono">📞</i> Teléfono: +51 977 570 327</p>
+        </div>
+        <div class="creditos">
+            <p>&copy; 2025 Oscar Zuñiga. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdownContent");
+    dropdown.classList.toggle("show");
+}
+
+// Cerrar el dropdown si se hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-btn') && !event.target.matches('.hamburger-icon')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+</body>
+
+    </header>
+
+</body>
+</html>
