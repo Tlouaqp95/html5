@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small local styles to match the blue 'card' look used in plantilla2 */
+    .content-enlaces {
+      background-color: lightblue !important;
+      width: 200px !important;
+      height: 100px !important;
+      padding: 10px !important;
+      margin: 0 !important;
+      border-radius: 8px !important;
+      transition: all 0.3s ease !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    }
+    .content-enlaces:hover { transform: translateY(-5px) !important; box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; }
+    .content-enlaces a { text-decoration: none !important; color: #333 !important; font-weight: bold !important; font-size: 16px !important; text-align:center !important; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="index2.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="undc-logo.jpg" alt="Logo" class="h-20 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="index2.html" class="text-sm/6 font-semibold text-white">Inicio</a>
+        <a href="creadores.html" class="text-sm/6 font-semibold text-white">Creadores</a>
+        <a href="juegos.html" class="text-sm/6 font-semibold text-white">videojuegos</a>
+        <a href="lista-juegos.html" class="text-sm/6 font-semibold text-white">Lista Juegos</a>
+        <a href="logos.html" class="text-sm/6 font-semibold text-white">Logos</a>
+        <a href="plantilla.html" class="text-sm/6 font-semibold text-white">Plantilla 1</a>
+        <a href="plantilla2.html" class="text-sm/6 font-semibold text-white">Plantilla 2</a>
+        <a href="Maqueta.html" class="text-sm/6 font-semibold text-white">Maqueta</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <!-- kept intentionally empty to preserve layout alignment on large screens -->
+      </div>
+    </nav>
+  </header>
+
+  <!-- Positioned blue-card style 'Regresar' link to match the tiles below -->
+  <div style="position:absolute; top:0.8rem; right:1rem; z-index:999;">
+    <div class="content-enlaces" aria-hidden="false">
+      <a href="index2.html" onclick="window.location.href='index2.html'">Regresar a index2</a>
+    </div>
+  </div>
+  <div style="margin-top:7rem;"></div>
+
+  <section class="py-16" style="padding-top:7rem;">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">CREADORES</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        A continuación se muestran los creadores de algunos de los juegos del catálogo.
+      </p>
+    </div>
+
+    <!-- Grid de tarjetas -->
+    <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      
+      <!-- Card -->
+  <div class="bg-gray-800 rounded-2xl p-6 text-center transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:bg-indigo-500 hover:shadow-2xl">
+        <div class="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden bg-gray-700 flex items-center justify-center">
+          <img src="https://assetsio.gnwcdn.com/miyazaki.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Miyazaki Hidetaka" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-lg font-semibold">Miyazaki Hidetaka</h3>
+        <p class="text-sm text-gray-400">El Chad</p>
+        <div class="flex justify-center mt-4 space-x-4">
+          <h1 class="text-lg font-semibold">Creador de Dark Souls, Sekiro, Elden Ring y Bloodborne</h1>
+        </div>
+      </div>
+
+      <!-- Card -->
+  <div class="bg-gray-800 rounded-2xl p-6 text-center transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:bg-indigo-500 hover:shadow-2xl">
+        <div class="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden bg-gray-700 flex items-center justify-center">
+          <img src="https://culturageek.com.ar/wp-content/uploads/2025/07/Cultura-Geek24-1.webp" alt="Gabe Newell" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-lg font-semibold">Gabe Newell</h3>
+        <p class="text-sm text-gray-400">Gaben</p>
+        <div class="flex justify-center mt-4 space-x-4">
+            <h1 class="text-lg font-semibold">Creador de Half Life, Portal y Counter Strike, y lo mas importante, la plataforma de Steam</h1>
+        </div>
+      </div>
+
+      <!-- Card -->
+  <div class="bg-gray-800 rounded-2xl p-6 text-center transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:bg-indigo-500 hover:shadow-2xl">
+        <div class="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden bg-gray-700 flex items-center justify-center">
+          <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/shigeru-miyanoto-2873193.jpg?tf=3840x" alt="Emily Selman" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-lg font-semibold">Shigeru Miyamoto</h3>
+        <p class="text-sm text-gray-400"></p>
+        <div class="flex justify-center mt-4 space-x-4">
+          <h1 class="text-lg font-semibold">Creador de Mario y Zelda </h1>
+        </div>
+      </div>
+
+      <!-- Card -->
+  <div class="bg-gray-800 rounded-2xl p-6 text-center transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:bg-indigo-500 hover:shadow-2xl">
+        <div class="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden bg-gray-700 flex items-center justify-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0bid3WQJMOiPaHivHVCpqWoYNReh7Unt3g&s" alt="Neil Druckmann" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-lg font-semibold">Neil Druckmann</h3>
+        <p class="text-sm text-gray-400">El Dios de los videojuegos</p>
+        <div class="flex justify-center mt-4 space-x-4">
+          <h1 class="text-lg font-semibold">Creador de The Last of Us y Uncharted</h1>
+        </div>
+      </div>
+
+      <!-- Card -->
+  <div class="bg-gray-800 rounded-2xl p-6 text-center transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:bg-indigo-500 hover:shadow-2xl">
+        <div class="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden bg-gray-700 flex items-center justify-center">
+          <img src="data:image/jpeg;base64,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" alt="Ana Torres" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-lg font-semibold">Hideo Kojima</h3>
+        <p class="text-sm text-gray-400">GOATjima</p>
+        <div class="flex justify-center mt-4 space-x-4">
+            <h1 class="text-lg font-semibold">Creador de Metal Gear, Death Stranding y Silent Hill</h1>
+        </div>
+      </div>
+
+      <!-- Card -->
+  <div class="bg-gray-800 rounded-2xl p-6 text-center transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:bg-indigo-500 hover:shadow-2xl">
+        <div class="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden bg-gray-700 flex items-center justify-center">
+          <img src="https://media.c5n.com/p/ec4bc6102a1906726384e8571427a8d3/adjuntos/326/imagenes/000/299/0000299992/1200x675/smart/markus-persson.jpg" alt="Miguel López" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-lg font-semibold">Markus Persson</h3>
+        <p class="text-sm text-gray-400">Notch</p>
+        <div class="flex justify-center mt-4 space-x-4">
+            <h1 class="text-lg font-semibold">Creador de Minecraft</h1>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

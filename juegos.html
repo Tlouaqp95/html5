@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos Destacados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body class="bg-gray-900">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="index2.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="undc-logo.jpg" alt="Logo" class="h-20 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="index2.html" class="text-sm/6 font-semibold text-white">Inicio</a>
+        <a href="creadores.html" class="text-sm/6 font-semibold text-white">Creadores</a>
+        <a href="juegos.html" class="text-sm/6 font-semibold text-white">Juegos</a>
+        <a href="lista-juegos.html" class="text-sm/6 font-semibold text-white">Lista Juegos</a>
+        <a href="logos.html" class="text-sm/6 font-semibold text-white">Logos</a>
+        <a href="plantilla.html" class="text-sm/6 font-semibold text-white">Plantilla 1</a>
+        <a href="plantilla2.html" class="text-sm/6 font-semibold text-white">Plantilla 2</a>
+        <a href="Maqueta.html" class="text-sm/6 font-semibold text-white">Maqueta</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="index2.html" class="text-sm/6 font-semibold text-white">Regresar a principal <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+  </header>
+  <div style="margin-top:7rem;"></div>
+
+  <div class="max-w-4xl mx-auto mt-20 mb-12 text-center">
+    <h2 class="text-indigo-400 font-semibold text-lg mb-2">A continuación</h2>
+    <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">Juegos destacados</h1>
+  </div>
+
+  <!-- Grid de juegos destacados -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 mb-16 items-stretch">
+    <!-- Minecraft: ocupa dos filas a la izquierda -->
+  <div class="rounded-2xl bg-[#181C2A] border border-[#23263A] p-8 shadow-xl flex flex-col justify-between min-h-[320px] min-w-[260px] md:min-w-[320px] lg:min-w-[360px] transition-all duration-300 hover:scale-105 hover:shadow-2xl row-span-2 lg:row-span-2">
+        <img src="minecraft.jpg" alt="Minecraft" class="w-full h-40 object-cover rounded-xl mb-4 border-2 border-indigo-500 shadow-md">
+        <h2 class="text-2xl font-bold text-white mb-2 tracking-wide">Minecraft</h2>
+        <p class="text-gray-300 mb-2">Un mundo abierto de bloques donde puedes construir, explorar y sobrevivir solo o con amigos. ¡La creatividad es el límite!</p>
+        <ul class="text-gray-400 text-sm mb-2 list-disc list-inside">
+          <li>Modo creativo y supervivencia</li>
+          <li>Multijugador online y local</li>
+          <li>Actualizaciones constantes y mods</li>
+        </ul>
+        <span class="text-indigo-400 text-xs">Desarrollador: Mojang Studios</span>
+      </div>
+    <!-- Zelda arriba centro -->
+  <div class="rounded-2xl bg-[#181C2A] border border-[#23263A] p-8 shadow-xl flex flex-col justify-between min-h-[320px] min-w-[260px] md:min-w-[320px] lg:min-w-[360px] transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="zelda.jpg" alt="Zelda Breath of the Wild" class="w-full h-40 object-cover rounded-xl mb-4 border-2 border-green-400 shadow-md">
+        <h2 class="text-2xl font-bold text-white mb-2 tracking-wide">The Legend of Zelda: Breath of the Wild</h2>
+        <p class="text-gray-300 mb-2">Explora un vasto mundo lleno de misterios, acertijos y enemigos. Una aventura épica que redefine la saga Zelda.</p>
+        <ul class="text-gray-400 text-sm mb-2 list-disc list-inside">
+          <li>Mundo abierto y exploración libre</li>
+          <li>Física avanzada y clima dinámico</li>
+          <li>Puzzles y santuarios desafiantes</li>
+        </ul>
+        <span class="text-green-400 text-xs">Desarrollador: Nintendo</span>
+      </div>
+    <!-- Dark Souls arriba derecha -->
+  <div class="rounded-2xl bg-[#181C2A] border border-[#23263A] p-8 shadow-xl flex flex-col justify-between min-h-[320px] min-w-[260px] md:min-w-[320px] lg:min-w-[360px] transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="darksouls.jpg" alt="Dark Souls" class="w-full h-40 object-cover rounded-xl mb-4 border-2 border-yellow-400 shadow-md">
+        <h2 class="text-2xl font-bold text-white mb-2 tracking-wide">Dark Souls</h2>
+        <p class="text-gray-300 mb-2">Un desafiante RPG de acción donde cada enemigo es un reto y cada victoria se siente épica.</p>
+        <ul class="text-gray-400 text-sm mb-2 list-disc list-inside">
+          <li>Combate exigente y estratégico</li>
+          <li>Ambientes oscuros y misteriosos</li>
+          <li>Gran rejugabilidad y secretos</li>
+        </ul>
+        <span class="text-yellow-400 text-xs">Desarrollador: FromSoftware</span>
+      </div>
+    <!-- Uncharted: ocupa dos columnas abajo centro y derecha -->
+  <div class="rounded-2xl bg-[#181C2A] border border-[#23263A] p-8 shadow-xl flex flex-col justify-between min-h-[320px] min-w-[260px] md:min-w-[320px] lg:min-w-[360px] transition-all duration-300 hover:scale-105 hover:shadow-2xl col-span-2 lg:col-span-2">
+        <img src="uncharted.jpg" alt="Uncharted 4" class="w-full h-40 object-cover rounded-xl mb-4 border-2 border-blue-400 shadow-md">
+        <h2 class="text-2xl font-bold text-white mb-2 tracking-wide">Uncharted 4: A Thief's End</h2>
+        <p class="text-gray-300 mb-2">Acompaña a Nathan Drake en su última aventura llena de acción, tesoros y paisajes impresionantes. Una experiencia cinematográfica única.</p>
+        <ul class="text-gray-400 text-sm mb-2 list-disc list-inside">
+          <li>Historia envolvente y cinemática</li>
+          <li>Exploración, acertijos y acción</li>
+          <li>Gráficos y escenarios impresionantes</li>
+        </ul>
+        <span class="text-blue-400 text-xs">Desarrollador: Naughty Dog</span>
+      </div>
+      <!-- Puedes duplicar o modificar las tarjetas para más juegos destacados -->
+  </div>
+
+  <!-- ...existing code... -->
+</body>
+</html>
